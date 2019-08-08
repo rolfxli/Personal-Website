@@ -1,0 +1,28 @@
+@import '../../assets/utils';
+
+#portfolio-header{
+  //box-shadow: $default-box-shadow;
+  padding-bottom: 0.75rem;
+  position: relative;
+  .top-header{
+    padding-top: 2rem;
+    .return-home{
+      position: absolute;
+      padding: 2rem;
+    }
+    .header-title{
+      font-weight: 600;
+      /*
+      &::after{
+        content: '.';
+        animation: fadein 0.75s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+      }
+
+       */
+    }
+    // add separator if wanted
+    .header-description{
+      max-width: 50%;
+    }
+  }
+}

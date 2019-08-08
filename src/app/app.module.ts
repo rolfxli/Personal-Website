@@ -7,6 +7,10 @@ import { HomeComponent } from './home/home.component';
 import { MainTextComponent } from './home/main-text/main-text.component';
 import { ConnectionsComponent } from './connections/connections.component';
 import { ButtonComponent } from './button/button.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { ButtonComponent } from './button/button.component';
     HomeComponent,
     MainTextComponent,
     ConnectionsComponent,
-    ButtonComponent
+    ButtonComponent,
+    NotFoundComponent,
+    FooterComponent,
+    HeaderComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

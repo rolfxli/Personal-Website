@@ -1,0 +1,13 @@
+.component-footer{
+  position: absolute;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  alight-items: center;
+  .align-right{
+    justify-content: right;
+  }
+}
