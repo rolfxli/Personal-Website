@@ -2,5 +2,12 @@
 
 body {
   min-height: 100vh;
+  background: whitesmoke;
   margin: 0;
+}
+markdown *{
+  margin-top: 1rem;
+  &:first-child{
+    margin-top: 0;
+  }
 }
