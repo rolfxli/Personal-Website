@@ -11,6 +11,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ProjectDisplayComponent } from './project-display/project-display.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     NotFoundComponent,
     FooterComponent,
     HeaderComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ProjectDisplayComponent
   ],
   imports: [
     BrowserModule,

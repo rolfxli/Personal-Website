@@ -1,0 +1,14 @@
+<div class="columns project-display is-gapless">
+  <div class="column is-5 project-left columns" [style.background-image]="image">
+    <div class="column project-content">
+      <h1 class="project-number is-size-3">{{positionNumber}}//</h1>
+      <h3 class="project-title is-size-3">{{project.title}}</h3>
+      <p class="stack" *ngIf="project.stack">{{project.stack.join(", ")}}</p>
+      <p class="desc">{{project.desc}}</p>
+      <component-button class="view-code" *ngIf="project.code" link="{{project.code}}" text='Code'></component-button>
+      &nbsp;
+      <component-button class="view-project" *ngIf="project.link" link="{{project.link}}" text='To Project'></component-button>
+    </div>
+  </div>
+  <div class="column is-7 project-right" [style.background-image]="image">&nbsp;</div>
+</div>

@@ -4,12 +4,19 @@
   //box-shadow: $default-box-shadow;
   padding-bottom: 0.75rem;
   position: relative;
-  .top-header{
+  .top-header {
     padding-top: 2rem;
-    .return-home{
+
+    .return-home {
       position: absolute;
-      padding: 2rem;
+      right: 2rem;
     }
+  }
+  .header-wrapper{
+    margin: 0;
+    margin-top: 2rem;
+    //position: center;
+  }
     .header-title{
       font-weight: 600;
       /*
@@ -21,8 +28,10 @@
        */
     }
     // add separator if wanted
+  .header-content{
+    padding: 8rem 0;
+  }
     .header-description{
       max-width: 50%;
     }
   }
-}
