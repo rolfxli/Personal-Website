@@ -1,0 +1,55 @@
+@import '../../assets/utils';
+
+.project-display{
+  border-top-style: solid;
+  border-top-width: 0.1rem;
+  border-top-color: black;
+  background: white;
+  padding-bottom: 0;
+  .project-number{
+    color: deepskyblue;
+  }
+  margin-bottom: 0;
+  position:relative;
+  /*
+  &::before{
+    content: '/';
+    position:absolute;
+    left: 0px;
+    top: 5.5px;
+    font-size: 28px;
+  }
+
+   */
+  .project-title{
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+  .stack{
+    text-transform: uppercase;
+  }
+  .project-left {
+    position: relative;
+    .project-content {
+      position: relative;
+      z-index: 99;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+    .desc{
+      margin: 1rem 0;
+    }
+  }
+  .project-right {
+    background-size: 100%;
+    background-position: right top;
+    background-repeat: no-repeat;
+
+    @include until($tablet) {
+      display: none;
+    }
+    @include from($tablet){
+      clip-path: ellipse(100% 175vh at 100% 50%);
+    }
+  }
+}

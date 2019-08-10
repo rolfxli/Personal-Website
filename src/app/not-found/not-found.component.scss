@@ -1,0 +1,26 @@
+@import '../../assets/utils';
+
+.notfound-content{
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 7rem);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.notfound-header{
+  position: fixed;
+  width: 100%;
+  padding-top: 2rem;
+  .return-home{
+    z-index:99;
+    position: absolute;
+    right: 2rem;
+  }
+}
+.footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
