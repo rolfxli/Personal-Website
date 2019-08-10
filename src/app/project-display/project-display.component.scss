@@ -33,7 +33,7 @@
     .project-content {
       position: relative;
       z-index: 99;
-      padding-top: 4rem;
+      padding-top: 5rem;
       padding-bottom: 5rem;
     }
     .desc{
@@ -48,12 +48,6 @@
     @include until($tablet) {
       display: none;
     }
-    /*
-    @include from($tablet){
-      clip-path: ellipse(100% 175vh at 110% 0%);
-    }
-
-     */
     @include from($tablet){
       clip-path: ellipse(100% 175vh at 100% 50%);
     }

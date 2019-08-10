@@ -18,14 +18,14 @@ export class PortfolioComponent implements OnInit {
       image: '/assets/images/discord-logo.jpg',
       // link: 'https://github.com/rolfxli/MusicBot',
       code: 'https://github.com/rolfxli/MusicBot',
-      stack: ['Node.js', 'PostgreSQL']
+      stack: ['Javascript', 'Node.js', 'PostgreSQL']
     });
     this.projects.push({
       title: 'WatHub',
       // tslint:disable-next-line:max-line-length
       desc: 'A University of Waterloo mobile app with many features including important dates + calendar, ' +
         'feedback, and more. Developed with William Lei, Iris Chen, and more!',
-      image: '',
+      image: '/assets/images/WatHub-for-Website.jpg',
       link: 'https://play.google.com/store/apps/details?id=io.github.wztlei.wathub',
       code: 'https://github.com/wztlei/wathub',
       stack: ['Java', 'XML', 'Firebase']
@@ -37,7 +37,7 @@ export class PortfolioComponent implements OnInit {
         'for two years.',
       image: '/assets/images/worldinfocusimg.png',
       link: 'http://worldinfocus.ca/',
-      stack: ['Angular 2', 'Express.js', 'Node.js']
+      stack: ['Javascript', 'Angular 2', 'Express.js', 'Node.js']
     });
     this.projects.push({
       title: 'This Website!',
@@ -45,10 +45,22 @@ export class PortfolioComponent implements OnInit {
       desc: 'This website was developed to display some highlighted projects and my resume. It is responsive, ' +
         'dynamic, and most of all, cool!',
       image: '/assets/images/personalwebhome.png',
-      link: 'http://rli.ca/',
+      link: 'http://rolfli.ca/',
       code: 'https://github.com/rolfxli/Personal-Website',
       stack: ['Javascript', 'HTML/SASS', 'Angular 2', 'Node.js']
     });
+    /*
+    this.projects.push({
+      title: 'Boat Dodge',
+      // tslint:disable-next-line:max-line-length
+      desc: 'A fun and quirky game built using scratch that was a blast to build to introduce to my aunt\'s' +
+      ' 2nd grade class in China.',
+      image: '/assets/images/boatdodge.jpg',
+      // link: 'http://rolfli.ca/',
+      code: 'https://github.com/rolfxli/BoatDodge',
+      stack: ['Scratch']
+    });
+    */
     this.displayed = this.projects;
   }
 
