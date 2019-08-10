@@ -12,6 +12,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectDisplayComponent } from './project-display/project-display.component';
+import { LogoComponent } from './logo/logo.component';
+import { LogoDarkComponent } from './logo-dark/logo-dark.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ProjectDisplayComponent } from './project-display/project-display.compo
     FooterComponent,
     HeaderComponent,
     PortfolioComponent,
-    ProjectDisplayComponent
+    ProjectDisplayComponent,
+    LogoComponent,
+    LogoDarkComponent
   ],
   imports: [
     BrowserModule,

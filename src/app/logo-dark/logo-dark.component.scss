@@ -1,0 +1,31 @@
+@import '../../assets/utils';
+
+.invert{
+  filter: brightness(0) invert(1);
+}
+
+.logo-wrapper{
+  text-decoration: none;
+  color: black;
+  display:flex;
+}
+
+.logo-container{
+  img{
+    height: 5rem;
+    transform: translate(15px, -35px);
+  }
+}
+.logo-content{
+  display:flex;
+  .logo-divider{
+    transform: translate(0, -15px) scale(0.5, 1);
+    margin-right: 0.5rem;
+  }
+  .logo-name{
+    &::after{
+      content: '.';
+      animation: fadein 1s ease-in-out infinite alternate;
+    }
+  }
+}

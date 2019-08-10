@@ -29,14 +29,12 @@
     text-transform: uppercase;
   }
   .project-left {
-    @include from($tablet){
-      background-image: none !important;
-    }
     position: relative;
     .project-content {
       position: relative;
       z-index: 99;
-      padding: 5rem;
+      padding-top: 4rem;
+      padding-bottom: 5rem;
     }
     .desc{
       margin: 1rem 0;

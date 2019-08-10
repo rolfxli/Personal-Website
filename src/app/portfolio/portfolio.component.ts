@@ -23,25 +23,34 @@ export class PortfolioComponent implements OnInit {
     this.projects.push({
       title: 'WatHub',
       // tslint:disable-next-line:max-line-length
-      desc: 'A University of Waterloo mobile application with support for many features including important dates + calendar support, ' +
-        'feedback options, and more. Developed with William Lei, Iris Chen, and a great team!',
+      desc: 'A University of Waterloo mobile app with many features including important dates + calendar, ' +
+        'feedback, and more. Developed with William Lei, Iris Chen, and more!',
       image: '',
       link: 'https://play.google.com/store/apps/details?id=io.github.wztlei.wathub',
       code: 'https://github.com/wztlei/wathub',
-      stack: ['Android', 'Firebase']
+      stack: ['Java', 'XML', 'Firebase']
     });
     this.projects.push({
       title: 'World in Focus',
       // tslint:disable-next-line:max-line-length
-      desc: 'A website for charity I was .......... fill here',
+      desc: 'I was the proud Head of Finance and web developer for World in Focus, a student run non-profit ' +
+        'for two years.',
       image: '/assets/images/worldinfocusimg.png',
       link: 'http://worldinfocus.ca/',
-      stack: ['Angular', 'Node.js']
+      stack: ['Angular 2', 'Express.js', 'Node.js']
+    });
+    this.projects.push({
+      title: 'This Website!',
+      // tslint:disable-next-line:max-line-length
+      desc: 'This website was developed to display some highlighted projects and my resume. It is responsive, ' +
+        'dynamic, and most of all, cool!',
+      image: '/assets/images/personalwebhome.png',
+      link: 'http://rli.ca/',
+      code: 'https://github.com/rolfxli/Personal-Website',
+      stack: ['Javascript', 'HTML/SASS', 'Angular 2', 'Node.js']
     });
     this.displayed = this.projects;
   }
-
-  // slice to preview?
 
   ngOnInit() {
   }

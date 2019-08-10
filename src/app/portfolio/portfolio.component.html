@@ -1,5 +1,6 @@
 <app-header></app-header>
 <!-- <h1>testing</h1> -->
+<component-logo-dark class="component-logo-dark"></component-logo-dark>
 <p class="empty-projects" *ngIf="displayed.length == 0">Where did all the projects go?</p>
 <portfolio-project-display *ngFor="let project of displayed; let i=index;" [number]="i+1" [project]="project"></portfolio-project-display>
 <component-footer></component-footer>
