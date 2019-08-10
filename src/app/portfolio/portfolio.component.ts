@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {DisplayProject} from '../portfolio.interface';
+import { DisplayProject} from '../portfolio.interface';
 
 @Component({
   selector: 'app-portfolio',
@@ -14,6 +14,7 @@ export class PortfolioComponent implements OnInit {
     this.projects.push({
       title: 'Discord Music Bot',
       desc: 'A bot built on the discord.js library; supports playing songs and tracking previous plays.',
+      // tslint:disable-next-line:max-line-length
       image: '/assets/images/discord-logo.jpg',
       // link: 'https://github.com/rolfxli/MusicBot',
       code: 'https://github.com/rolfxli/MusicBot',
@@ -33,9 +34,8 @@ export class PortfolioComponent implements OnInit {
       title: 'World in Focus',
       // tslint:disable-next-line:max-line-length
       desc: 'A website for charity I was .......... fill here',
-      image: '',
+      image: '/assets/images/worldinfocusimg.png',
       link: 'http://worldinfocus.ca/',
-      // code: 'https://github.com/wztlei/wathub',
       stack: ['Angular', 'Node.js']
     });
     this.displayed = this.projects;

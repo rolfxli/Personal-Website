@@ -1,12 +1,17 @@
 @import '../../assets/utils';
 
 .project-display{
+  border-top-style: solid;
+  border-top-width: 0.1rem;
+  border-top-color: black;
   background: white;
+  padding-bottom: 0;
   .project-number{
     color: deepskyblue;
   }
   margin-bottom: 0;
   position:relative;
+  /*
   &::before{
     content: '/';
     position:absolute;
@@ -14,6 +19,8 @@
     top: 5.5px;
     font-size: 28px;
   }
+
+   */
   .project-title{
     text-transform: capitalize;
     font-weight: 600;
@@ -22,6 +29,9 @@
     text-transform: uppercase;
   }
   .project-left {
+    @include from($tablet){
+      background-image: none !important;
+    }
     position: relative;
     .project-content {
       position: relative;
@@ -33,10 +43,21 @@
     }
   }
   .project-right {
-    background-size: 90%;
+    background-size: 100%;
     background-position: right top;
     background-repeat: no-repeat;
 
-    @include until($tablet)
+    @include until($tablet) {
+      display: none;
+    }
+    /*
+    @include from($tablet){
+      clip-path: ellipse(100% 175vh at 110% 0%);
+    }
+
+     */
+    @include from($tablet){
+      clip-path: ellipse(100% 175vh at 100% 50%);
+    }
   }
 }

@@ -11,13 +11,14 @@ import {DomSanitizer} from '@angular/platform-browser';
 export class ProjectDisplayComponent implements OnInit {
   @Input() project: DisplayProject;
   @Input() number: number;
+   @Input() reverse: boolean = false;
   image: any;
 
   constructor(private sanitization: DomSanitizer) {
     this.project = {
       title: 'test',
       desc: 'test',
-      image: '',
+      image: 'http://picsum.photos/1000',
       link: 'link'
     };
   }
@@ -27,7 +28,6 @@ export class ProjectDisplayComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.image = this.sanitization.bypassSecurityTrustStyle('url($(this.project.image))');
+    this.image = this.sanitization.bypassSecurityTrustStyle('url(${this.project.image})');
   }
-
 }
