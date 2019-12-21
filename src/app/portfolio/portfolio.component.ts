@@ -11,6 +11,15 @@ export class PortfolioComponent implements OnInit {
   displayed: Array<DisplayProject> = [];
 
   constructor() {
+     this.projects.push({
+      title: 'IR Ranger',
+      // tslint:disable-next-line:max-line-length
+      desc: 'An night time animal tracking Hackathon project developed at Hack the 6ix 2019; placed top 10 in Best Hack',
+      image: '/assets/images/ir_ranger.jpg',
+      link: 'https://devpost.com/software/ir-ranger-jwlen0',
+      code: 'https://github.com/rolfxli/hackthe6ix2019frontend',
+      stack: ['Javascript', 'Node.js', 'MongoDB', 'AngularJS', 'Amazon Rekognition']
+    });
     this.projects.push({
       title: 'Discord Music Bot',
       desc: 'A bot built on the discord.js library; supports playing songs and tracking previous plays.',
@@ -29,6 +38,13 @@ export class PortfolioComponent implements OnInit {
       link: 'https://play.google.com/store/apps/details?id=io.github.wztlei.wathub',
       code: 'https://github.com/wztlei/wathub',
       stack: ['Java', 'XML', 'Firebase']
+    });
+    this.projects.push({
+      title: 'Biquadris',
+      // tslint:disable-next-line:max-line-length
+      desc: 'The CS246 Final Group Project in which we built Tetris in C++ with XWindow and other libraries. Achieved 104% including bonus on the game.',
+      image: '/assets/images/tetris.jpg',
+      stack: ['C++']
     });
     this.projects.push({
       title: 'World in Focus',
